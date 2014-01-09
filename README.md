@@ -6,7 +6,7 @@ Jackson mixin support for spring controllers using annotations.
 Example
 =======
 
-Simply annotation your @RequestMapping method with @JsonResponse and pass an array of @JsonMixin's to apply.
+Simply annotate your @RequestMapping method with @JsonResponse and pass an array of @JsonMixin's to apply.
 
 	@RequestMapping("/customers/summary")
 	@JsonResponse(mixins = {
