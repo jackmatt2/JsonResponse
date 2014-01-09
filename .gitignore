@@ -4,3 +4,9 @@
 *.jar
 *.war
 *.ear
+
+#eclipse files
+**/.*
+target/
+bin/
+.settings/
