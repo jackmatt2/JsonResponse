@@ -1,6 +1,6 @@
 package io.jackmatthews.jsonresponse;
 
-class ResponseWrapperImpl implements ResponseWrapper {
+final class ResponseWrapperImpl implements ResponseWrapper {
 
 	private final Object originalResponse;
 	private final JsonResponse jsonResponse;

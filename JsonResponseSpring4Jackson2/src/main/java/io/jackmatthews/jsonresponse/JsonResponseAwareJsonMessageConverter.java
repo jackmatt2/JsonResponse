@@ -17,7 +17,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
  * @author Jack Matthews
  *
  */
-public class JsonResponseAwareJsonMessageConverter extends
+final class JsonResponseAwareJsonMessageConverter extends
         MappingJackson2HttpMessageConverter {
 
     public JsonResponseAwareJsonMessageConverter()

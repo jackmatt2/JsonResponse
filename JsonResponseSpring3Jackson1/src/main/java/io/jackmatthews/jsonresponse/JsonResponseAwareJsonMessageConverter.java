@@ -16,7 +16,7 @@ import org.springframework.http.converter.json.MappingJacksonHttpMessageConverte
  * @author Jack Matthews
  *
  */
-public class JsonResponseAwareJsonMessageConverter extends
+final class JsonResponseAwareJsonMessageConverter extends
         MappingJacksonHttpMessageConverter {
 
     public JsonResponseAwareJsonMessageConverter()

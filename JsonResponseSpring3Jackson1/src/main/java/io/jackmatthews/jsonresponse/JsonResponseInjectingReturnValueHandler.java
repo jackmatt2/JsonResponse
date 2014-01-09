@@ -12,7 +12,7 @@ import org.springframework.web.method.support.ModelAndViewContainer;
 * @author Jack Matthews
 *
 */
-public class JsonResponseInjectingReturnValueHandler implements
+final class JsonResponseInjectingReturnValueHandler implements
        HandlerMethodReturnValueHandler {
 
    private final HandlerMethodReturnValueHandler delegate;

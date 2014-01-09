@@ -20,7 +20,7 @@ import com.google.common.collect.Lists;
  * @author Jack Matthews
  *
  */
-public class JsonResponseSupportFactoryBean implements InitializingBean {
+final class JsonResponseSupportFactoryBean implements InitializingBean {
 	
 	Logger log = LoggerFactory.getLogger(JsonResponseSupportFactoryBean.class);
 
