@@ -35,7 +35,7 @@ Which Project?
 ==============
 JsonResponseSpring3Jackson1 - for Spring 3.x and Jackson 1.9.x
 
-JsonResponseSpring3Jackson1 - for Spring 4.x and Jackson 2.x
+JsonResponseSpring4Jackson2 - for Spring 4.x and Jackson 2.x
 
 Acknowledgements
 ================
