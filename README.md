@@ -21,13 +21,13 @@ Simply annotate your @RequestMapping method with @JsonResponse and pass an array
 Servlet Configuration
 ---------------------
 
-Modify your spring configuration as follows:
+Modify your spring mvc servlet configuration as follows:
 
-	<annotation-driven>
-		<message-converters>
+	<mvc:annotation-driven>
+		<mvc:message-converters>
 			<beans:bean class="io.jackmatthews.jsonresponse.JsonResponseAwareJsonMessageConverter" />
-		</message-converters>
-	</annotation-driven>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
 	
 	<beans:bean class="io.jackmatthews.jsonresponse.JsonResponseSupportFactoryBean" />
 	
