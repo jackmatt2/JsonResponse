@@ -23,13 +23,13 @@ Servlet Configuration
 
 Modify your spring configuration as follows:
 
-	<annotation-driven>
-		<message-converters>
-			<beans:bean class="io.jackmatthews.jsonresponse.JsonResponseAwareJsonMessageConverter" />
-		</message-converters>
-	</annotation-driven>
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<beans:bean class="au.id.jackmatthews.jsonresponse.JsonResponseAwareJsonMessageConverter" />
+		</mvc:message-converters>
+	</mvc:annotation-driven>
 	
-	<beans:bean class="io.jackmatthews.jsonresponse.JsonResponseSupportFactoryBean" />
+	<beans:bean class="au.id.jackmatthews.jsonresponse.JsonResponseSupportFactoryBean" />
 	
 Which Project?
 ==============
