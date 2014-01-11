@@ -33,11 +33,11 @@ Modify your spring configuration as follows:
 	
 Which Project?
 ==============
-core - required
+*core* - required
 
-spring3jackson1 - for Spring 3.x and Jackson 1.9.x
+*spring3jackson1* - for Spring 3.x and Jackson 1.9.x
 
-spring4jackson2 - for Spring 4.x and Jackson 2.x
+*spring4jackson2* - for Spring 4.x and Jackson 2.x
 
 Acknowledgements
 ================
