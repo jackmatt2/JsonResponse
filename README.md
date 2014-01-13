@@ -1,4 +1,4 @@
-@JsonResponse / @JsonMixin
+@JsonResponse & @JsonMixin
 ==========================
 
 Jackson mixin support for spring controllers using annotations.
