@@ -1,13 +1,14 @@
 @JsonResponse & @JsonMixin
 ==========================
 
-Jackson mixin support for spring controllers using annotations.
+**Jackson mixin** support for spring controllers using annotations.
 
 Example
 =======
 
 Simply annotate your @RequestMapping method with @JsonResponse and pass an array of @JsonMixin's to apply.
 
+``` java
 	@RequestMapping("/customers/summary")
 	@JsonResponse(mixins = {
 			@JsonMixin(target=Customer.class, mixin=Customer.SummaryMixin.class),
@@ -17,12 +18,13 @@ Simply annotate your @RequestMapping method with @JsonResponse and pass an array
 	{
 		return data;
 	}
+```
 	
 Servlet Configuration
 ---------------------
 
 Modify your spring configuration as follows:
-
+``` xml
 	<mvc:annotation-driven>
 		<mvc:message-converters>
 			<beans:bean class="au.id.jackmatthews.jsonresponse.JsonResponseAwareJsonMessageConverter" />
@@ -30,14 +32,18 @@ Modify your spring configuration as follows:
 	</mvc:annotation-driven>
 	
 	<beans:bean class="au.id.jackmatthews.jsonresponse.JsonResponseSupportFactoryBean" />
-	
+```
+
 Which Project?
 ==============
-*core* - required
-
-*spring3jackson1* - for Spring 3.x and Jackson 1.9.x
-
-*spring4jackson2* - for Spring 4.x and Jackson 2.x
+> __core__ - required
+> 
+> __spring3jackson1__ - for Spring 3.x and Jackson 1.9.x
+> 
+> __spring4jackson2__ - for Spring 4.x and Jackson 2.x
+>
+> You will have to do a mix and match of the source code if you are using a different configuration 
+> (say Spring 3.x > and Jackson 2.x)
 
 Acknowledgements
 ================
