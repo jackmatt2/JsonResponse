@@ -36,6 +36,10 @@ Modify your spring configuration as follows:
 
 Which Project?
 ==============
+The project comes as a Spring MVC application with an example mapping, you can import the projects into STS and test the generated WAR file on your server.  
+
+Too add the code to your own project all you need is the src/main/java folder from the **core** package and the src/main/java folder from either **spring3jackson1** or **spring4jackson2**.  You also need to make the spring configuration chages above.  You can delete the the **au.id.jackmatthews.jsonresponse.example** package completely.
+
 > __core__ - required
 > 
 > __spring3jackson1__ - for Spring 3.x and Jackson 1.9.x
