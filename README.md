@@ -38,7 +38,7 @@ Which Project?
 ==============
 The project comes as a Spring MVC application with an example mapping, you can import the projects into STS and test the generated WAR file on your server.  
 
-Too add the code to your own project all you need is the src/main/java folder from the **core** project and the src/main/java folder from either project **spring3jackson1** or **spring4jackson2**.  You also need to make the spring configuration chages above.  You can delete the the **au.id.jackmatthews.jsonresponse.example** package completely.
+Too add the code to your own project all you need is the src/main/java folder from the **core** project and the src/main/java folder from either project **spring3jackson1** or **spring4jackson2**.  You also need to make the spring configuration chages above.  You can delete the **au.id.jackmatthews.jsonresponse.example** package completely.
 
 You will aso need to add the guava maven dependency to your project:
 ``` xml
